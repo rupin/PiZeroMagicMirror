@@ -1,0 +1,94 @@
+body
+{
+	background-color:#000000;	
+}
+.textcolorvisible
+{
+	color:#FFFFFF;	
+}
+
+.textcolorinvisible
+{
+	color:#000000;
+}
+.bigfont
+{
+	font-size:110px;
+}
+
+.verybigfont
+{
+	font-size:165px;
+}
+.smallfont
+{
+	font-size:45px;
+}
+.tinyfont
+{
+	font-size:28px;
+}
+.xsfont
+{
+	font-size:25px;
+}
+.xxsfont
+{
+	font-size:20px;
+}
+.averagefont
+{
+	font-size:60px;
+}
+.mediumfont
+{
+	font-size:90px;
+}
+.leftAlign
+{
+	text-align:left;
+}
+.rightAlign
+{
+	text-align:right;
+}
+.puzzleDiv
+{
+	padding-bottom:10px;
+}
+hr
+{
+	height:10px;
+}
+.bold
+{
+	font-weight:bold;
+}
+.panel
+{
+	
+}
+.forecastHolder
+{
+	margin-bottom:3px;
+	
+	
+	
+	
+}
+.spacer
+{
+	padding-right:5px;
+}
+.nonpuzzle
+{
+	display:block;
+}
+.puzzle
+{
+	display:none;
+}
+iframe{
+    overflow:hidden;
+}
+
