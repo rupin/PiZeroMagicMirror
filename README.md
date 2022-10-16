@@ -19,7 +19,7 @@ This Repo hosts the Flask Application which can be deployed to Heroku.
 
 Install Raspbian Lite on an SD card. Use the Pi Imager software (https://www.raspberrypi.com/software/) to write the image of the Raspbian List onto the SD card. 
 
-#Minimum Environment for GUI Applications
+# Minimum Environment for GUI Applications
 
 Usually the graphical environment for GNU/Linux consists of four parts:
 
@@ -33,5 +33,5 @@ However, we only want to run a single application (the web browser) in full scre
 The bare minimum we need are X server and window manager. Let’s install just that:
 
 
-sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
+[code]sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox[/code]
 
