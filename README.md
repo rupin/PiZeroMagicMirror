@@ -1,9 +1,12 @@
 # MagicMirror
 A Magic Mirror that runs on the Pi Zero or Pi Zero W. 
-![My animated logo](https://github.com/rupin/PiZeroMagicMirror/raw/main/MagicMirrorImage.jpeg)
 
 
-Due to the increasing prices of the Rapsberry Pi in 2022, It was unlikely that I could afford to buy one. 
+
+<img src="https://github.com/rupin/PiZeroMagicMirror/raw/main/MagicMirrorImage.jpeg"  height="400" />
+
+
+Due to the increasing prices of the Raspberry Pi in 2022, It was unlikely that I could afford to buy one. 
 
 The Pi Zero, which I had a couple of, were used to run a Magic Mirror. Unfortunately, the Pi Zero W was not cut out to run chromium, let alone any kind of a webserver which could serve pages. 
 
