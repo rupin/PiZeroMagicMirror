@@ -16,7 +16,17 @@ I split the desired task load as follows
 
 2) A Flask app which would run on heroku, that the browser in the Pi loads. 
 
-This Repo hosts the Flask Application which can be deployed to Heroku. 
+
+
+# Deploy This Flask Application on Heroku
+
+1) Fork this Repo
+2) Create an account on Heroku
+3) Create a New App
+4) Connect Deployment on heroku thropugh github
+5) Select your Forked Repo to be deployed
+6) Open the App in a browser. 
+7) Copy the URL of your App, it will be used in steps below.
 
 
 # Setting up the Raspberry Pi
