@@ -17,7 +17,18 @@ This Repo hosts the Flask Application which can be deployed to Heroku.
 
 # Setting up the Raspberry Pi
 
-Install Raspbian Lite on an SD card. Use the Pi Imager software (https://www.raspberrypi.com/software/) to write the image of the Raspbian List onto the SD card. 
+Install Raspbian Lite on an SD card. Use the Pi Imager software (https://www.raspberrypi.com/software/) to write the image of the Raspbian Lite onto the SD card.
+Configure the SSH, Wifi and Hostname files in the settings. 
+
+Make sure the Pi shows up on the network and you are able to SSH into it, and you have internet access. 
+
+Upgrade and Update to latest
+
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+```
 
 # Minimum Environment for GUI Applications
 
@@ -33,5 +44,22 @@ However, we only want to run a single application (the web browser) in full scre
 The bare minimum we need are X server and window manager. Let’s install just that:
 
 
-[code]sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox[/code]
+```
+sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
+```
+
+# Web Browser
+We’ll use Midori because its the only lighweight browser that has the most needed features. 
+
+```
+sudo apt-get install midori
+```
+
+# Configure OpenBox
+
+Open the following file (/etc/xdg/openbox/autostart) to edit it 
+```
+sudo nano /etc/xdg/openbox/autostart
+
+```
 
