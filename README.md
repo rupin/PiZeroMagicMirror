@@ -1,5 +1,6 @@
 # MagicMirror
-A Magic Mirror that runs on the Pi Zero or Pi Zero W.
+A Magic Mirror that runs on the Pi Zero or Pi Zero W. 
+![My animated logo](https://github.com/rupin/PiZeroMagicMirror/raw/main/MagicMirrorImage.jpeg)
 
 
 Due to the increasing prices of the Rapsberry Pi in 2022, It was unlikely that I could afford to buy one. 
