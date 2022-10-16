@@ -8,7 +8,7 @@ A Magic Mirror that runs on the Pi Zero or Pi Zero W.
 
 Due to the increasing prices of the Raspberry Pi in 2022, It was unlikely that I could afford to buy one. 
 
-The Pi Zero, which I had a couple of, were used to run a Magic Mirror. Unfortunately, the Pi Zero W was not cut out to run chromium, let alone any kind of a webserver which could serve pages. 
+The Pi Zero, which I had a couple of, were used to run a Magic Mirror. Unfortunately, the Pi Zero W was not cut out to run Chromium, let alone any kind of a webserver which could serve pages. 
 
 I split the desired task load as follows
 
