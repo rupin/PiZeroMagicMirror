@@ -1,5 +1,5 @@
 # MagicMirror
-A Magic Mirror Web Interface Deployed to Heroku
+A Magic Mirror that runs on the Pi Zero or Pi Zero W.
 
 
 Due to the increasing prices of the Rapsberry Pi in 2022, It was unlikely that I could afford to buy one. 
