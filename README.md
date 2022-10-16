@@ -48,13 +48,13 @@ sudo apt-get upgrade
 
 Usually the graphical environment for GNU/Linux consists of four parts:
 
-X server (usually X.Org)
+a) X server (usually X.Org)
 
-Window manager (openbox, XFWM, …)
+b) Window manager (openbox, XFWM, …)
 
-Desktop environment (PIXEL, LXDE, MATE, …)
+c) Desktop environment (PIXEL, LXDE, MATE, …)
 
-Login manager (for example LightDM)
+d) Login manager (for example LightDM)
 
 However, we only want to run a single application (the web browser) in full screen – so we don’t need a desktop environment. And we already have autologin enabled (and no other users will ever use the Pi) – so we don’t need a login manager either.
 
