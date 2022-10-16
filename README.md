@@ -35,7 +35,7 @@ sudo apt-get upgrade
 Usually the graphical environment for GNU/Linux consists of four parts:
 
 X server (usually X.Org)
-Window manager (Openbox, XFWM, …)
+Window manager (openbox, XFWM, …)
 Desktop environment (PIXEL, LXDE, MATE, …)
 Login manager (for example LightDM)
 
@@ -63,3 +63,19 @@ sudo nano /etc/xdg/openbox/autostart
 
 ```
 
+Add the following 4 lines to the end of the file
+
+```
+xset -dpms # disable DPMS (Energy Star) features.
+xset s off # disable screen saver
+xset s noblank # don't blank the video device
+midori -e Fullscreen -e Navigationbar * your-heroku-website url * # Start Midori in Fullscreen mode, without a Navigation bar, and load the URL.
+```
+Save your file. 
+
+That’s it! Time to give it a try:
+```
+sudo startx -- -nocursor
+```
+
+In a few seconds, you should see the website loaded if your Pi is Connected to a TV.
