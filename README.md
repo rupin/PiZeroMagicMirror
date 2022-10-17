@@ -119,10 +119,10 @@ sudo startx -- -nocursor
 In a few seconds, you should see the website loaded if your Pi is Connected to a TV.
 
 # Rotate the Display
-Edit file \boot\config\txt
+Edit file /boot/config.txt
 
 ```
-sudo nano \boot\config.txt
+sudo nano /boot/config.txt
 ```
 
 Add the following line at the end of the file \boot\config.txt
