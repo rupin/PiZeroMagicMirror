@@ -22,6 +22,11 @@
 				
 				
   });
+
+  
+
+
+
   var checkPingPong=true;
   function showPingPong()
   {
@@ -250,7 +255,7 @@
 		return imageName;
   }
   
-  function getNewsRSS()
+ /* function getNewsRSS()
   {
 	 $.ajax({url: "/news", success: function(result){
        
@@ -267,7 +272,43 @@
 		$("#newsDiv").html(htmlString);
 	   
     }});
+  }*/
+
+  function getNewsRSS()
+  {
+	 $.ajax({url: "/news", success: function(result){
+       
+	   xmlDoc = $.parseXML( result );
+	   $xml = $( xmlDoc )
+	   $titles = $xml.find( "entry" )
+	   htmlString=""
+	   //htmlString="<b>Phrases Of the Week</b><br>";
+	   //htmlString=htmlString+"<h4>";
+	   $titles.slice(0, 6).each(function( index ) {
+			htmlString=htmlString+"<div class='slides'><b>"+ $( this ).find("title").text() + "</b>: " + $( this ).find("summary").text() + "</div>";
+		});
+		//htmlString=htmlString+"</h4>";
+		$("#newsDiv").html(htmlString);
+		playSlides();
+	   
+    }});
   }
+
+  function playSlides()
+  {
+	$('#newsDiv div:gt(0)').hide();
+	setInterval(function(){
+		$('#newsDiv div:first').toggle().appendTo('#newsDiv');
+		$('#newsDiv div:first').fadeToggle(2000);
+		/*.next('.slides').fadeIn(2000)
+		.end()*/
+	}, 7000);
+
+  }
+
+  
+  
+	
   
   function animate()
   {
