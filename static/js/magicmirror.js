@@ -285,7 +285,7 @@
 	   //htmlString="<b>Phrases Of the Week</b><br>";
 	   //htmlString=htmlString+"<h4>";
 	   $titles.slice(0, 6).each(function( index ) {
-			htmlString=htmlString+"<div class='slides'><b>"+ $( this ).find("title").text() + "</b>: " + $( this ).find("summary").text() + "</div>";
+			htmlString=htmlString+"<div class='slides'><p><h4><i>"+ $( this ).find("title").text() + "</i></h4></p><p> " + $( this ).find("summary").text() + "</p></div>";
 		});
 		//htmlString=htmlString+"</h4>";
 		$("#newsDiv").html(htmlString);
