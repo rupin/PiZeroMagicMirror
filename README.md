@@ -12,7 +12,7 @@ The Pi Zero, which I had a couple of, were used to run a Magic Mirror. Unfortuna
 
 I split the desired task load as follows
 
-1) The Rapsberry Pi would just run a browser on startup and load a Webpage running on the internet. 
+1) The Raspberry Pi would just run a browser on startup and load a Webpage running on the internet. 
 
 2) A Flask app which would run on heroku, that the browser in the Pi loads. 
 
