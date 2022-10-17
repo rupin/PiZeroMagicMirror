@@ -44,6 +44,18 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+# Raspi Configuration
+Execute the command
+
+```
+sudo raspi-config
+```
+
+Configure the following from the menu that appears ( use arrow keys)
+1) #### Expand File system
+2) #### Auto Login
+3) #### Enable VNC Server
+
 # Minimum Environment for GUI Applications
 
 Usually the graphical environment for GNU/Linux consists of four parts:
@@ -96,3 +108,16 @@ sudo startx -- -nocursor
 ```
 
 In a few seconds, you should see the website loaded if your Pi is Connected to a TV.
+
+# Rotate the Display
+Edit \boot\config\txt
+
+Add the following line at the end of the file
+```
+display_hdmi_rotate=3
+```
+
+Comment the following line by putting a # in front of it
+```
+dtoverlay=vc4-kms-v3d
+```
