@@ -52,9 +52,19 @@ sudo raspi-config
 ```
 
 Configure the following from the menu that appears ( use arrow keys)
-1) #### Expand File system
+1) #### Expand File system 
+
+    Advanced Options > Expand File System
+    
 2) #### Auto Login
+
+     System Options > Boot/ Auto Login > Console Autologin > Autologin as Pi User
+     
 3) #### Enable VNC Server
+
+  Interface Options > VNC Server > Enable
+
+#### Reboot the Pi.
 
 # Minimum Environment for GUI Applications
 
@@ -70,8 +80,7 @@ d) Login manager (for example LightDM)
 
 However, we only want to run a single application (the web browser) in full screen – so we don’t need a desktop environment. And we already have autologin enabled (and no other users will ever use the Pi) – so we don’t need a login manager either.
 
-The bare minimum we need are X server and window manager. Let’s install just that:
-
+The bare minimum we need are X server and OpenBox window manager. Let’s install just that:
 
 ```
 sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
@@ -110,9 +119,13 @@ sudo startx -- -nocursor
 In a few seconds, you should see the website loaded if your Pi is Connected to a TV.
 
 # Rotate the Display
-Edit \boot\config\txt
+Edit file \boot\config\txt
 
-Add the following line at the end of the file
+```
+sudo nano \boot\config.txt
+```
+
+Add the following line at the end of the file \boot\config.txt
 ```
 display_hdmi_rotate=3
 ```
