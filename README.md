@@ -23,7 +23,7 @@ I split the desired task load as follows
 1) Fork this Repo
 2) Create an account on Heroku
 3) Create a New App
-4) Connect Deployment on heroku thropugh github
+4) Connect Deployment on heroku through github
 5) Select your Forked Repo to be deployed
 6) Open the App in a browser. 
 7) Copy the URL of your App, it will be used in steps below.
