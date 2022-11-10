@@ -205,7 +205,7 @@
 			var formattedTime = months[fmonth]+ " "+fdate;
 			imagePath=getImageForWeatherDescription(wDescription);
 			
-			html=html+"<div class='grid-100 tinyfont forecastHolder'>"
+			html=html+"<div class='grid-100 xsfont forecastHolder'>"
 			html=html+"<span class='spacer'><b>"+formattedTime+": </b></span>"
 			//html=html+"<span class='spacer'><img src='"+imagePath+"' height='50px'/></span>"
 			html=html+"<span>"+dayTempererature.toFixed(0)+"°C, "+wDescription+"</span>"
@@ -281,10 +281,11 @@
 	   xmlDoc = $.parseXML( result );
 	   $xml = $( xmlDoc )
 	   $titles = $xml.find( "entry" )
+	   
 	   htmlString=""
 	   //htmlString="<b>Phrases Of the Week</b><br>";
 	   //htmlString=htmlString+"<h4>";
-	   $titles.slice(0, 6).each(function( index ) {
+	   $titles.each(function( index ) {
 			htmlString=htmlString+"<div class='slides'><p><h4><i>"+ $( this ).find("title").text() + "</i></h4></p><p> " + $( this ).find("summary").text() + "</p></div>";
 		});
 		//htmlString=htmlString+"</h4>";
@@ -299,7 +300,7 @@
 	$('#newsDiv div:gt(0)').hide();
 	setInterval(function(){
 		$('#newsDiv div:first').toggle().appendTo('#newsDiv');
-		$('#newsDiv div:first').fadeToggle(2000);
+		$('#newsDiv div:first').fadeToggle(5000);
 		/*.next('.slides').fadeIn(2000)
 		.end()*/
 	}, 7000);
