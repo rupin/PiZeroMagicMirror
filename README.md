@@ -3,7 +3,7 @@ A Magic Mirror that runs on the Pi Zero or Pi Zero W.
 
 
 
-<img src="https://github.com/rupin/PiZeroMagicMirror/raw/main/MagicMirrorImage.jpeg"  height="400" />
+<img src="https://github.com/rupin/PiZeroMagicMirror/raw/main/MagicMirrorImage.jpeg"  height="400" /><img src="https://github.com/rupin/PiZeroMagicMirror/raw/main/IMG_20221124_110554.jpg"  height="400" />
 
 
 Due to the increasing prices of the Raspberry Pi in 2022, It was unlikely that I could afford to buy one. 
